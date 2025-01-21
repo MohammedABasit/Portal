@@ -1,0 +1,151 @@
+/* Mazer Theme Styles */
+:root {
+    --primary-color: #435ebe;
+    --secondary-color: #6c757d;
+    --success-color: #198754;
+    --info-color: #0dcaf0;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+}
+
+/* Layout */
+.layout-horizontal {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,.05);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* Cards */
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,.05);
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-header {
+    background-color: transparent;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    padding: 1.5rem;
+}
+
+.card-header h4 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+/* Forms */
+.form-label {
+    font-weight: 500;
+    margin-bottom: .5rem;
+}
+
+.form-control, .form-select {
+    border-radius: .375rem;
+    border: 1px solid #dce7f1;
+    padding: .375rem .75rem;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(67, 94, 190, 0.25);
+}
+
+/* Buttons */
+.btn {
+    padding: .375rem 1rem;
+    border-radius: .375rem;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #3950a2;
+    border-color: #3950a2;
+}
+
+/* Tables */
+.table {
+    --bs-table-striped-bg: rgba(67, 94, 190, 0.05);
+}
+
+.table th {
+    font-weight: 600;
+    background-color: rgba(67, 94, 190, 0.1);
+}
+
+/* Dropzone */
+.dropzone {
+    border: 2px dashed var(--primary-color);
+    border-radius: .5rem;
+    background: #f8f9fa;
+    min-height: 150px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.dropzone:hover {
+    background: #fff;
+}
+
+/* Progress Steps */
+.progress-steps {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.step {
+    background: #fff;
+    border: 2px solid #dce7f1;
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+}
+
+.step.active {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .progress-steps {
+        flex-direction: column;
+    }
+    
+    .step {
+        margin-bottom: .5rem;
+    }
+}
